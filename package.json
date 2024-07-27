@@ -1,0 +1,25 @@
+{
+  "name": "article-preview-component",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatricioZarauz/article-preview-component.git"
+  },
+  "author": "Patricio Zarauz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatricioZarauz/article-preview-component/issues"
+  },
+  "homepage": "https://github.com/PatricioZarauz/article-preview-component#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "sass": "^1.77.8"
+  }
+}

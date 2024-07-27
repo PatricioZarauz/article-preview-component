@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="/images/favicon-32x32.ico"
+    />
+
+    <link rel="stylesheet" href="scss/main.scss" />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <script defer type="module" src="index.js"></script>
+  </head>
+  <body>
+    <article>
+      <picture>
+        <source type="image/webp" srcset="/images/drawers.webp" />
+        <img src="/images/drawers.jpg" alt="Green living room drawer" />
+      </picture>
+      <div class="article-content">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="author-profile">
+          <picture>
+            <source type="image/webp" srcset="/images/avatar-michelle.webp" />
+            <img
+              src="/images/avatar-michelle.jpg"
+              alt="Michelle Appleton Profile Picture"
+            />
+          </picture>
+          <div class="author-published-info">
+            <h3>Michelle Appleton</h3>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <div class="share-links">
+          <span> Share </span>
+          <ul class="social-media-links">
+            <li>
+              <button aria-setsize="3" aria-posinset="1">twitter</button>
+            </li>
+            <li>
+              <button aria-setsize="3" aria-posinset="2">facebook</button>
+            </li>
+            <li>
+              <button aria-setsize="3" aria-posinset="3">pintrest</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
