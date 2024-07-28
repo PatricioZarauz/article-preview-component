@@ -12,55 +12,67 @@
       href="/images/favicon-32x32.ico"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="scss/main.scss" />
     <title>Frontend Mentor | Article preview component</title>
 
     <script defer type="module" src="index.js"></script>
   </head>
   <body>
-    <article>
-      <picture>
-        <source type="image/webp" srcset="/images/drawers.webp" />
-        <img src="/images/drawers.jpg" alt="Green living room drawer" />
-      </picture>
-      <div class="article-content">
-        <h1>
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h1>
-        <p>
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
-        <div class="author-profile">
-          <picture>
-            <source type="image/webp" srcset="/images/avatar-michelle.webp" />
-            <img
-              src="/images/avatar-michelle.jpg"
-              alt="Michelle Appleton Profile Picture"
-            />
-          </picture>
-          <div class="author-published-info">
-            <h3>Michelle Appleton</h3>
-            <p>28 Jun 2020</p>
+    <main>
+      <article>
+        <picture class="card-cover">
+          <source type="image/webp" srcset="/images/drawers.webp" />
+          <img src="/images/drawers.jpg" alt="Green living room drawer" />
+        </picture>
+        <div class="article-content">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="author-profile">
+            <picture>
+              <source type="image/webp" srcset="/images/avatar-michelle.webp" />
+              <img
+                src="/images/avatar-michelle.jpg"
+                alt="Michelle Appleton Profile Picture"
+              />
+            </picture>
+            <div class="author-published-info">
+              <h3>Michelle Appleton</h3>
+              <p>28 Jun 2020</p>
+            </div>
+            <button id="share-button">
+              <img src="/images/icon-share.svg" />
+            </button>
+          </div>
+          <div class="share-links">
+            <span> Share </span>
+            <ul class="social-media-links">
+              <li>
+                <button aria-setsize="3" aria-posinset="1">twitter</button>
+              </li>
+              <li>
+                <button aria-setsize="3" aria-posinset="2">facebook</button>
+              </li>
+              <li>
+                <button aria-setsize="3" aria-posinset="3">pintrest</button>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="share-links">
-          <span> Share </span>
-          <ul class="social-media-links">
-            <li>
-              <button aria-setsize="3" aria-posinset="1">twitter</button>
-            </li>
-            <li>
-              <button aria-setsize="3" aria-posinset="2">facebook</button>
-            </li>
-            <li>
-              <button aria-setsize="3" aria-posinset="3">pintrest</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </article>
+      </article>
+    </main>
   </body>
 </html>

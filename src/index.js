@@ -1,8 +1,8 @@
-const article = document.querySelector("article");
+const button = document.getElementById("share-button");
 
 function onClickHandler(e) {
   console.log("Click!");
   console.log("e.target: ", e.target);
 }
 
-article.addEventListener("click", onClickHandler);
+button.addEventListener("click", onClickHandler);

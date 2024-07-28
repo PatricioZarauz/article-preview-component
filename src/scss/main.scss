@@ -1,3 +1,8 @@
+$very_dark_grayish_blue: hsl(217, 19%, 35%);
+$desaturated_dark_blue: hsl(214, 17%, 51%);
+$grayish_blue: hsl(212, 23%, 69%);
+$light_grayish_blue: hsl(210, 46%, 95%);
+
 *,
 *::before,
 *::after {
@@ -6,7 +11,43 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 0.8125rem;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
 picture,
 img {
   display: block;
+}
+
+body {
+  background-color: $light_grayish_blue;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  grid-auto-rows: minmax((calc(100vh - 8rem)), 1fr);
+  margin-inline: 1.8rem;
+  margin-block: 5.6rem;
+}
+
+article {
+  max-width: 50ch;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-cover {
+  img {
+    width: 100%;
+  }
+}
+
+.article-content {
+  padding: 2rem;
 }
